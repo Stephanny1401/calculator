@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-Javascript</title>
+    <link rel="stylesheet" type= "text/css" href="/css/estilos.css">
+</head>
+<body>
+    <h1>Calculadora HTML5/CSS </h1>
+  <form class="calculator" name="calc">
+    <h2>Haz algun calculo para ver resultado</h2>
+    <div>
+      <input class="value" type="text" name="txt">
+    </div>
+    
+
+  <div class="calculator-buttons">
+
+      <span class="calc-button" onclick="document.calc.txt.value +='1'">1</span>
+      <span class="calc-button" onclick="document.calc.txt.value +='2'">2</span>
+      <span class="calc-button" onclick="document.calc.txt.value +='3'">3</span>
+      <span class="calc-button" onclick="document.calc.txt.value +='+'">&plus;</span>
+
+      <span class="calc-button"onclick="document.calc.txt.value +='4'">4</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='5'">5</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='6'">6</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='-'">&minus;</span>
+
+      <span class="calc-button"onclick="document.calc.txt.value +='7'">7</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='8'">8</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='9'">9</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='*'">&times;</span>
+      <span class="calc-button is-zero"onclick="document.calc.txt.value +='0'">0</span>
+      <span class="calc-button is-clear"onclick="document.calc.txt.value =' '">C</span>
+      <span class="calc-button"onclick="document.calc.txt.value +='/'">&divide;</span>
+      <span class="calc-button is-equals"onclick="document.calc.txt.value = eval(calc.txt.value)">&equals;</span>
+  </div>
+
+
+  </form> 
+</body>
+</html>
